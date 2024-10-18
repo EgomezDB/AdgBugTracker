@@ -1,0 +1,6 @@
+@AdgBugTracker_HostAddress = http://localhost:5152
+
+GET {{AdgBugTracker_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

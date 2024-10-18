@@ -1,0 +1,27 @@
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# User-specific files (MonoDevelop/Xamarin Studio)
+*.pidb
+*.userprefs
+
+# Build output
+bin/
+obj/
+
+# Node.js dependencies
+node_modules/
+
+# Temporary files
+*.tmp
+*.log
+*.vs
+.vs/
+.vscode/
+
+# Other
+*.bak
+*.cache
