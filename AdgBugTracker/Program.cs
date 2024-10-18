@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddDbContext<AdgBugTrackerDbContext>
     (
-    options => options.UseLazyLoadingProxies().UseSqlServer("Data Source= DESKTOP-OL22LOO;Initial Catalog=AdgTrackerDB;User ID=sa;Password=Adg0537;TrustServerCertificate=true")
+    options => options.UseLazyLoadingProxies().UseSqlServer("Data Source= DESKTOP-OL22LOO;Initial Catalog=AdgTrackerDB;User ID=sa;Password=;TrustServerCertificate=true")
     );
 builder.Services.AddControllers();
 builder.Services.AddAuthorization();
