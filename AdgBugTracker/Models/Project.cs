@@ -1,4 +1,6 @@
-﻿namespace AdgBugTracker.Models
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace AdgBugTracker.Models
 {
     public class Project
     {
@@ -7,6 +9,7 @@
         public string? Description { get; set; }
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
         public DateTime UpdatedAt { get; set; }
-        public int CreatedBy { get; set; }
+        public required string CreatedBy { get; set; }
+        public required virtual User User { get; set; }
     }
 }

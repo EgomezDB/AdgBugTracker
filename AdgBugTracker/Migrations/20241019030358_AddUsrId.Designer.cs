@@ -4,6 +4,7 @@ using AdgBugTracker.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AdgBugTracker.Migrations
 {
     [DbContext(typeof(AdgBugTrackerDbContext))]
-    partial class AdgBugTrackerDbContextModelSnapshot : ModelSnapshot
+    [Migration("20241019030358_AddUsrId")]
+    partial class AddUsrId
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
